@@ -23,7 +23,7 @@ const Formulario = ({ handleAlert }) => {
 
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.])[A-Za-z\d@$!%*?&.]{8,}$/;
         if (!passwordRegex.test(password)) {
-            handleAlert('La contraseña debe tener al menos 8 caracteres, incluir una letra mayúscula, una letra minúscula, un número y al menos un símbolo', 'danger');
+            handleAlert('La contraseña debe tener al menos 8 caracteres, incluir una letra mayúscula, una letra minúscula, un número y al menos un símbolo', 'secondary');
             return;
         }
 
